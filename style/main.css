@@ -1,0 +1,127 @@
+* {
+    margin:  0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --marine-blue: hsl(213, 96%, 18%);
+    --priamry-font: 16px;
+    --purplish-blue:  hsl(243, 100%, 62%);
+    --pastel-blue: hsl(228, 100%, 84%);
+    --light-blue: hsl(206, 94%, 87%);
+    --strawberry-red: hsl(354, 84%, 57%);
+    --cool-gray: hsl(231, 11%, 63%);
+    --light-gray: hsl(229, 24%, 87%);
+    --magnolia: hsl(217, 100%, 97%);
+    --alabaster: hsl(231, 100%, 99%);
+    --white: hsl(0, 0%, 100%);
+}
+body {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: var(--priamry-font);
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--light-blue);
+    position: relative;
+}
+.container {
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: var(--alabaster);
+    border-radius: 10px;
+    padding: 1.5rem;
+    justify-content: space-between;
+}
+.step-wrapper {
+    background: url(../multi-step-form-main/assets/images/bg-sidebar-desktop.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+.step-item {
+    display: flex;
+    margin: 1.5rem 2.5rem;
+    align-items: center;
+}
+.number {
+    border-radius: 50%;
+    outline: 2px solid var(--white);
+    outline-offset: 1px;
+    margin-right: 1.5rem;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    text-align: center;
+    color: var(--white);
+    padding: 0.3rem 0.6rem;
+}
+.step-content p {
+    width: max-content;
+}
+.title {
+    color: var(--cool-gray);
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    text-transform: uppercase;
+}
+.title-bold {
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+
+/* step-content */
+.step-content-title {
+    margin-left: 3rem;
+    position: relative;
+    padding: 2rem 1rem;
+}
+.step-content_item h1 {
+    color: var(--marine-blue);
+    margin-bottom: 0.7rem;
+}
+
+.step-content_item p {
+    color: var(--light-gray);
+    font-size: 1rem;
+    width: max-content;
+}
+.form-group {
+    margin: 2.5rem 0;
+}
+.form-item {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+}
+.form-item label {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: var(--marine-blue);
+}
+.form-item input {
+    padding: 0.5rem 0.5rem;
+    font-size: 1rem;
+    color: var(--marine-blue);
+    line-height: 1.5rem;
+    border-radius: 5px;
+    border: 1px solid var(--light-gray);
+    cursor: pointer;
+}
+.form-item input:focus-visible {
+    outline: 0.5px auto var(--purplish-blue);
+}
+.nextbtn {
+    padding: 0.5rem 0.6rem;
+    font-size: 0.9rem;
+    color: var(--white);
+    background-color: var(--marine-blue);
+    cursor: pointer;
+    border-radius: 7px;
+    margin: 1.5rem 0;
+    
+}

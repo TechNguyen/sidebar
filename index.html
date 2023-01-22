@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend-dasboard</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/res.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="web icon" href="./multi-step-form-main/assets/images/favicon-32x32.png">
+</head>
+<body>
+    <div class="container">
+        <!-- step wrapper -->
+        <div class="step-wrapper">
+            <!-- step 1 -->
+            <div class="step-item">
+                <span class="number">1</span>
+                <div class="step-content">
+                    <p class="title">Step 1</p>
+                    <p class="title-bold">Your info</p>
+                </div>
+            </div>
+            <!-- step 2 -->
+            <div class="step-item">
+                <span class="number">2</span>
+                <div class="step-content">
+                    <p class="title">STEP 2</p>
+                    <p class="title-bold">Select plan</p>
+                </div>
+            </div>
+            <!-- step 3 -->
+            <div class="step-item">
+                <span class="number">3</span>
+                <div class="step-content">
+                    <p class="title">Step 3</p>
+                    <p class="title-bold"> Add-ons</p>
+                </div>
+            </div>
+            <!-- step 4 -->
+            <div class="step-item">
+                <span class="number">4</span>
+                <div class="step-content">
+                    <p class="title">Step 4</p>
+                    <p class="title-bold">Summary</p>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- step-item_content  -->
+
+        <div class="step-content-title">
+            <div class="step-content_item">
+                <h1>Personal info</h1>
+                <p>Please provide your name, email address, and phone number.</p>
+                <form class="form-group">
+                    <div class="form-item">
+                        <label for="name">Name</label>
+                        <input id="name" placeholder="e.g. Stephen King" type="text">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">Email Address</label>
+                        <input id="email" placeholder="e.g. stephenking@lorem.com" type="text">
+                    </div>
+                    <div class="form-item">
+                        <label for="phone">  Phone Number</label>
+                        <input id="phone" placeholder="e.g. +1 234 567 890" type="text">
+                    </div>
+                </form>
+
+
+                <button class="nextbtn">Next Step</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./index.js"></script>
+</html>
