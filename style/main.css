@@ -95,7 +95,7 @@ body {
 }
 
 .step-content_item p {
-    color: var(--light-gray);
+    color: var(--cool-gray);
     font-size: 1rem;
     width: max-content;
 }
@@ -134,6 +134,7 @@ body {
     border: none;
     position: absolute;
     right: 0;
+    font-weight: bold;
 }
 .nextbtn:hover {
     opacity: 0.8;
@@ -144,4 +145,185 @@ body {
 .form-message {
     color: var(--strawberry-red);
     padding: 7px;
+}
+#form-choose {
+    width: 100%;
+    position: relative;
+}
+.form-choose-action {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2rem 0;
+}
+.form-choose_item {
+    border-radius: 7px;
+    border: 1px solid var(--cool-gray);
+    padding: 1.2rem;
+    cursor: pointer;
+}
+.form-choose-action {
+    transition: all 2s linear
+}
+.choose-package {
+    border-color: var(--marine-blue);
+    background-color: var(--magnolia);
+}
+.icon-img img {
+    margin-bottom: 3rem;
+}
+.item-content h5 {
+   font-weight: bolder;
+   font-size: 1rem;
+   color: var(--marine-blue);
+   line-height: 2rem;
+}
+.goback-btn {
+    padding: 0.6rem 0.7rem;
+    font-size: 0.8rem;
+    color: var(--light-gray);
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
+.choose-action {
+    display: flex;
+    font-size: 0.8rem;
+    font-weight: bold;
+    width: 100%;
+    background-color: var( --magnolia);
+    border-radius: 0.5rem;
+    justify-content: center;
+    margin-bottom: 1rem ;
+    padding: 0.6rem 0;
+}
+.choose {
+    color: var(--marine-blue) !important;
+}
+.choose-btn {
+    padding: 0 1.1rem;
+    background-color: var(--marine-blue);
+    border-radius: 2rem;
+    margin: 0 0.6rem;
+    position: relative;
+    height: 1.1rem;
+}
+.choose-roller{
+    position: absolute;
+    background-color: var(--white);
+    border-radius: 50%;
+    width: 40%;
+    height: 80%;
+    top: 10%;
+    cursor: pointer;
+}
+.left-btn {
+    left: 8%;
+    transition: all 2s ease-in;
+}
+.right-btn {
+    right: 8%;
+    transition: all 2s ease-in;
+}
+.months-free {
+    color: var(--marine-blue)  !important;
+    margin-top: 0.7rem;
+}
+
+
+
+
+
+
+/* Step 3 */
+.item_3 {
+    display: flex;
+    flex-direction: row;
+    border-radius: 7px;
+    border: 1px solid var(--light-gray);
+    cursor: pointer;
+    padding: 1rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-title {
+    display: flex;
+    align-items: center;
+}
+.input-title input {
+    accent-color: var( --purplish-blue);
+    width: 1rem;
+    height: 1rem;
+}
+.title-content h3 {
+    color: var(--marine-blue);
+    line-height: 2rem;
+}
+.title-content {
+    margin: 0 2rem;
+}
+.time {
+    color: var(--purplish-blue) !important;
+}
+.choose-step3 {
+    border-color: var(--marine-blue);
+    background-color: var(--light-blue);
+}
+
+
+/* Step 4 */
+
+
+.total-table {
+    background-color: var(--light-gray);
+    border-radius: 7px;
+}
+.total-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0.7rem;
+}
+.total-sum {
+    margin: 2rem 0;
+}
+.content h3 {
+    color: var(--marine-blue);
+}
+.money {
+    color: var(--marine-blue);
+}
+.line {
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--cool-gray);
+}
+.line p {
+    font-weight: bold
+}
+.total-money {
+    font-weight: bolder;
+}
+.bold {
+    font-weight: bold;
+}
+.changebtn {
+    font-weight: 100 !important;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Step 5 */
+
+.thank-content {
+    text-align: center;
+    padding: 2rem 5rem;
+}
+.thank-content h1 {
+    margin: 2.5rem 0 1.4rem 0;
+}
+.phara {
+    max-width: min-content;
 }
