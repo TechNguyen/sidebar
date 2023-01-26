@@ -1,0 +1,24 @@
+@media (max-width: 375px) {
+    .container {
+        display: block;
+    }
+    .step-content {
+        display: none;
+    }
+    .step-wrapper {
+        background-image: url(../img/images/bg-sidebar-mobile.svg);
+        background-position: center;
+        background-size: 100% 100%;
+        display: flex;
+    }
+    .icon-img img {
+        margin-right:  1rem;
+    }
+    .form-choose-action {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .form-choose_item {
+        display: flex;
+        align-items: center;
+    }
+}

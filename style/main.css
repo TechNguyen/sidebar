@@ -24,6 +24,10 @@ body {
     background-color: var(--light-blue);
     position: relative;
 }
+.wrapper {
+    width: 100%;
+    height: 100%;
+}
 .container {
     display: flex;
     position: absolute;
@@ -166,7 +170,7 @@ body {
     transition: all 2s linear
 }
 .choose-package {
-    border-color: var(--marine-blue);
+    border-color: var(--marine-blue) !important;
     background-color: var(--magnolia);
 }
 .icon-img img {
@@ -181,13 +185,18 @@ body {
 .goback-btn {
     padding: 0.6rem 0.7rem;
     font-size: 0.8rem;
-    color: var(--light-gray);
+    color: var(--cool-gray);
     background-color: transparent;
     cursor: pointer;
     border: none;
     position: absolute;
     left: 0;
     font-weight: bold;
+    border-radius: 5px;
+    transition: all 0.1s linear;
+}
+.goback-btn:hover {
+    background-color: var(--light-blue);
 }
 .choose-action {
     display: flex;
@@ -272,10 +281,11 @@ body {
     border-color: var(--marine-blue);
     background-color: var(--light-blue);
 }
-
+.fmess-step3 {
+    margin: 0.5rem 0;
+}
 
 /* Step 4 */
-
 
 .total-table {
     background-color: var(--light-gray);
@@ -294,7 +304,7 @@ body {
     color: var(--marine-blue);
 }
 .money {
-    color: var(--marine-blue);
+    color: var(--purplish-blue) !important;
 }
 .line {
     padding-bottom: 1rem;
@@ -306,7 +316,7 @@ body {
 .total-money {
     font-weight: bolder;
 }
-.bold {
+.sum {
     font-weight: bold;
 }
 .changebtn {
@@ -314,9 +324,7 @@ body {
     text-decoration: underline;
     cursor: pointer;
 }
-
 /* Step 5 */
-
 .thank-content {
     text-align: center;
     padding: 2rem 5rem;
